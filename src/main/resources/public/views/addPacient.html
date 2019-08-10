@@ -1,0 +1,41 @@
+<div class="container">
+
+	<div class="text-center">
+				<p class="h2 detalii-dark-text mb-5 mt-3"><strong>ADAUGA PACIENT</strong></p>
+	</div>
+	
+	 <div ng-controller="addPacient">
+	  <form name="form" ng-submit="addPacient()"  role="form">
+	    
+	    	 <div class="form-group"">
+			            <label for="nume">Nume</label>
+			            <input type="text" name="nume" id="nume" class="form-control" ng-model="pacient.nume"  >
+			        </div>
+			        
+			         <div class="form-group"">
+			            <label for="prenume">Prenume</label>
+			            <input type="text" name="prenume" id="prenume" class="form-control" ng-model="pacient.prenume" >
+			        </div>
+			        
+			        <div class="form-group"">
+			            <label for="data_nastere">Data Nastere</label>
+			            <input type="text" name="data_nastere" id="data_nastere" class="form-control" ng-model="pacient.data_nastere" >
+			        </div>
+			        
+			        <div class="form-group"">
+			            <label for="adresa">Adresa</label>
+			            <input type="text" name=""adresa"" id=""adresa"" class="form-control" ng-model="pacient.adresa"adresa"" >
+			        </div>
+			
+			        <div class="form-group"">
+			            <label for="istoric">Istoric Medical</label>
+			            <input type="text" name="istoric" id="istoric" class="form-control" ng-model="pacient.istoric" />
+			        </div>
+			        <div class="form-actions">
+			            <button type="submit" class="btn btn-primary mb-5">Adauga</button>
+			        </div>
+			        <a ng-href="/index.html#!/pacienti" class="btn btn-primary mt-3 mb-5">Inapoi la lista</a>
+	    </form>
+	</div>
+
+</div>

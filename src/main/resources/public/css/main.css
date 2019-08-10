@@ -1,0 +1,78 @@
+body {
+	background-color: #FFF;
+}
+
+.btn-main {
+	background-color: #169db1;
+	border-color: #46854c;
+	color: #fff !important;
+}
+
+.btn-main:hover {
+	background-color: #00867d !important;
+	border-color: #00867d !important;
+}
+
+.card-main {
+	background-color: #bee5ec;
+}
+
+.hp-title {
+	color: #007bff;
+}
+
+.main-nav {
+	background-color: #d4e6e8;
+}
+
+.homepage-jumbotron {
+	background-image: url("/img/banner.png");
+	background-position: center;
+	  background-repeat: no-repeat;
+	  background-size: cover;
+	  height: 400px;
+	  color: #fff;
+	margin-top:-25px;
+}
+
+.btn-jumbotron {
+	color: #fff;
+	border-color: #fff;
+}
+
+.btn-jumbotron:hover {
+	background-color: inherit;
+	border-color: #fff;
+}
+
+hr {
+	background-color: #fff;
+}
+
+a:link, a:visited, a:hover, a:active {
+	text-decoration: none !important;
+}
+
+.dark-black-text {
+	color: #545454;
+}
+
+.dark-blue-text {
+	color: #4c8083;
+}
+
+.detalii-dark-text {
+	color: #008fb5;
+}
+
+.detalii-card {
+	background-color: #169db1;
+}
+
+.detalii-content {
+	background-color: #17a2b7;
+}
+
+.white-text {
+	color: #fff !important;
+}

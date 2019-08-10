@@ -1,0 +1,40 @@
+<div class="jumbotron jumbotron-fluid homepage-jumbotron img-fluid">
+  <div class="container">
+    <h1 class="display-4">Pacient manager</h1>
+    <p class="lead">Gestionare simpla si eficienta a pacientilor</p>
+    <hr>
+    <p class="lead">Verificati detaliile pacientilor in lista de mai jos</p>
+    
+    <a href="/index.html#!/addPacient" class="btn btn-outline-primary btn-jumbotron">Adauga pacienti</a>
+  </div>
+</div>
+
+<div class="container grid">
+<div ng-controller="pacientiController">
+	<div class="row justify-content-left">
+		<div class="col-lg-6">
+			<div ng-repeat="pacient in pacienti">
+				<ul class="list-group">
+					<span ng-switch on="pacient.id % 2">
+						<span ng-switch-when="1">
+							<li class="list-group-item list-group-item-info">
+								<a  class="dark-blue-text"  href="/index.html#!/pacienti/{{pacient.id}}">{{pacient.nume}} {{pacient.prenume}}</a>
+							</li>
+						</span>
+						<span ng-switch-when="0">
+							<li class="list-group-item uneven">
+								<a class="dark-black-text" href="/index.html#!/pacienti/{{pacient.id}}">{{pacient.nume}} {{pacient.prenume}}</a>
+							</li>
+						</span>
+					</span>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<a href="/index.html#!/" class="btn btn-primary mt-5 mb-5">Acasa</a>
+
+
+</div>

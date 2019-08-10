@@ -1,0 +1,43 @@
+<div class="jumbotron jumbotron-fluid homepage-jumbotron img-fluid">
+  <div class="container">
+    <h1 class="display-4">Doctori si pacientii inscrisi</h1>
+    <p class="lead">Lista completa cu doctorii si pacientii inscrisir</p>
+    <hr> 
+    <a ng-href="/index.html#!/pacienti"  class="btn btn-outline-primary btn-jumbotron">Lista integrala pacienti</a>
+  </div>
+</div>
+
+<div class="container">
+	<div ng-controller="doctoriList" class="text-center">
+			
+			<div ng-repeat="info in newDr">
+				<div class="card mt-3">
+				  <div class="card-header detalii-card white-text">
+				    Nume doctor
+				  </div>
+				  <div class="card-body detalii-content white-text">
+				    <p class="card-text h5"><strong>{{info.doctor.nume}} {{info.doctor.prenume}}</strong></p>
+				  </div>
+				  <div class="card-header detalii-card white-text">
+				   	Specializare
+				  </div>
+				  <div class="card-body detalii-content white-text">
+				    <p class="card-text h6"><strong>{{info.doctor.specializare}}</strong></p>
+				  </div>
+				  
+				</div>
+				<div class="card">
+					<p class="detalii-dark-text h4 mt-3 mb-2">Pacienti</p><hr>
+					<span ng-repeat="pacient in info.pacienti">
+					 	<div class="card-body">
+					    	<p class="card-text detalii-dark-text "><strong><a href="/index.html#!/pacienti/{{pacient.id}}" class="dark-black-text">{{pacient.nume}}</a></strong></p><hr>
+					  	</div>
+					</span>
+				</div>
+			</div>
+			
+	
+	</div>
+	
+			<a ng-href="/index.html#!/" class="btn btn-primary mt-3 mb-5">Prima pagina</a>
+</div>

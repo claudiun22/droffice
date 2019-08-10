@@ -1,0 +1,73 @@
+<div class="container">
+	<div ng-controller="detaliiPacientController">
+		
+		<div class="text-center">
+			<p class="h2 detalii-dark-text mb-5 mt-3"><strong>INFORMATII PACIENT</strong></p>
+			
+			<div class="card">
+			  <div class="card-header detalii-card white-text">
+			    Nume si prenume
+			  </div>
+			  <div class="card-body detalii-content white-text">
+			    <p class="card-text"><strong>{{pacient.nume}} {{pacient.prenume}}</strong></p>
+			  </div>
+			  <div class="card-header">
+			   	Data nastere
+			  </div>
+			  <div class="card-body">
+			    <p class="card-text detalii-dark-text"><strong>{{pacient.data_nastere}}</strong></p>
+			  </div>
+			  <div class="card-header">
+			   	Adresa domiciliu
+			  </div>
+			  <div class="card-body">
+			    <p class="card-text detalii-dark-text"><strong>{{pacient.adresa}}</strong></p>
+			  </div>
+			  <div class="card-header">
+			   	Istoric medical
+			  </div>
+			  <div class="card-body">
+			    <p class="card-text detalii-dark-text"><strong>{{pacient.istoric}}</strong></p>
+			  </div>
+			</div>
+			
+			<a ng-href="/index.html#!/pacienti" class="btn btn-primary mt-3 mb-5">Inapoi la lista</a>
+		</div>
+		<p class="h2 detalii-dark-text mb-3 mt-5"><strong>MODIFICA DETALII</strong></p>
+		<div class="col-md-6 col-md-offset-3" >
+		    <form name="form" ng-submit="updateIstoric()"  role="form">
+		    
+		    	 <div class="form-group"">
+		            <label for="nume">Nume</label>
+		            <input type="text" name="nume" id="nume" class="form-control" ng-model="pacient.nume"  >
+		        </div>
+		        
+		         <div class="form-group"">
+		            <label for="prenume">Prenume</label>
+		            <input type="text" name="prenume" id="prenume" class="form-control" ng-model="pacient.prenume" >
+		        </div>
+		        
+		        <div class="form-group"">
+		            <label for="data_nastere">Data Nastere</label>
+		            <input type="text" name="data_nastere" id="data_nastere" class="form-control" ng-model="pacient.data_nastere" >
+		        </div>
+		        
+		        <div class="form-group"">
+		            <label for="adresa">Adresa</label>
+		            <input type="text" name=""adresa"" id=""adresa"" class="form-control" ng-model="pacient.adresa"adresa"" >
+		        </div>
+		
+		        <div class="form-group"">
+		            <label for="istoric">Istoric Medical</label>
+		            <input type="text" name="istoric" id="istoric" class="form-control" ng-model="pacient.istoric" />
+		        </div>
+		        <div class="form-actions">
+		            <button type="submit" class="btn btn-primary mb-5">Edit</button>
+		        </div>
+		    </form>
+		    
+		  	<a ng-click="deletePacient()" class="btn btn-danger white-text mb-5">Sterge Pacient</a>
+		  	
+		</div>
+	</div>
+</div>
